@@ -1,3 +1,26 @@
+/* regole generali */
+
+.float-left {
+  float: left;
+}
+
+.radius {
+  border-radius: 5px;
+}
+
+.margin-bot {
+  margin-bottom: 30px;
+}
+
+.background-col {
+  background-color: white;
+}
+
+.size-3 {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +35,13 @@ body {
   background-repeat: repeat;
 }
 
+/* header */
+
 header {
   margin-top: 20px;
 }
 
-.float-left {
-  float: left;
-}
+/* logo */
 
 .logo-box {
   position: relative;
@@ -41,11 +64,15 @@ header {
   height: 200px;
 }
 
+/* titolo logo */
+
 h1 {
   font-size: 20px;
   color: white;
   text-transform: uppercase;
 }
+
+/* navbar */
 
 .navbar {
   height: 40px;
@@ -60,25 +87,28 @@ h1 {
   display: inline-block;
   padding: 0 15px;
   list-style: none;
-  color: #939393;
-  text-decoration: none;
   text-transform: uppercase;
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-.navbar li:hover {
+.navbar a {
+  text-decoration: none;
+  color: #939393;
+}
+.navbar a:hover {
   color: #ffffff;
+}
+.navbar li:hover {
   background-color: rgba(0, 0, 0, 0.5)
 }
-
-
-.radius {
-  border-radius: 5px;
+.navbar ul li:first-child {
+  border-left: 0;
+}
+.navbar ul li:last-child {
+  border-right: 0;
 }
 
-.margin-bot {
-  margin-bottom: 30px;
-}
+/* zona contenuti */
 
 main {
   margin: 10px 0 20px;
@@ -89,10 +119,50 @@ main::after {
   clear: both;
 }
 
+/* colonna sinistra */
+
 .col-left {
   width: 20%;
   background-color: white;
+  padding: 5px;
 }
+.col-left a {
+  text-decoration: none;
+  color: green;
+}
+.col-left a:hover {
+  text-decoration: underline;
+}
+
+.col-left ul {
+  list-style: none;
+}
+.col-left li {
+  padding: 5px;
+}
+
+.col-left-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-left-title {
+  width: 20px;
+  padding-left: 5px;
+  font-size: 25px;
+}
+
+.col-left-list {
+  display: inline-block;
+}
+
+.col-header i {
+  font-size: 30px;
+  color: orange;
+}
+
+/* colonna centrale */
 
 .col-middle {
   width: 50%;
@@ -100,13 +170,13 @@ main::after {
   background-color: white;
 }
 
+/* colonna destra */
+
 .col-right {
   width: 20%;
 }
 
-.background-col {
-  background-color: white;
-}
+/* footer */
 
 footer {
   position: relative;
@@ -115,6 +185,8 @@ footer {
   padding: 5px;
   background-color: white;
 }
+
+/* scritta crediti */
 
 .credits {
   height: 20px;
@@ -127,10 +199,7 @@ hr {
   color: white;
 }
 
-.size-3 {
-  width: calc(100% / 3);
-  text-align: center;
-}
+/* icone social */
 
 .social {
   padding: 10px;
