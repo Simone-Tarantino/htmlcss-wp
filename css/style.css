@@ -188,6 +188,17 @@ main::after {
 .col-right {
   width: 20%;
 }
+.col-right-top,
+.col-right-mid,
+.col-right-bot {
+  padding: 20px;
+  line-height: 30px;
+}
+.col-right h3 {
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px lightgray;
+  text-transform: capitalize;
+}
 
 /* footer */
 
