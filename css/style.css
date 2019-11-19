@@ -5,24 +5,24 @@
 }
 
 body {
-  width: 60%;
+  width: 50%;
   margin: auto;
+  font-family: 'Open Sans', sans-serif;
   background-image: url("../img/background.png");
   background-repeat: repeat;
 }
 
 header {
-  position: relative;
-  height: 300px;
   margin-top: 20px;
 }
 
-.logo-box {
-  height: 85%;
+.float-left {
+  float: left;
 }
 
-.logo {
-  height: 100%;
+.logo-box {
+  position: relative;
+  height: 350px;
   border: 10px solid white;
   background-image: url(../img/logo.jpg);
   background-position: center;
@@ -30,8 +30,23 @@ header {
   background-size: cover;
 }
 
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.logo img {
+  height: 200px;
+}
+.logo h1 {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
 .navbar {
-  position: relative;
   height: 40px;
   width: 100%;
   background-color: #666666;
@@ -42,18 +57,19 @@ header {
 }
 .navbar li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 15px;
   list-style: none;
   color: #939393;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 .navbar li:hover {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5)
 }
 
-.float-left {
-  float: left;
-}
 
 .radius {
   border-radius: 5px;
