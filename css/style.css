@@ -40,7 +40,8 @@ header {
 .logo img {
   height: 200px;
 }
-.logo h1 {
+
+h1 {
   font-size: 20px;
   color: white;
   text-transform: uppercase;
@@ -110,14 +111,12 @@ main::after {
 footer {
   position: relative;
   text-align: center;
-  height: 200px;
   margin-bottom: 20px;
   padding: 5px;
   background-color: white;
 }
 
 .credits {
-  position: relative;
   height: 20px;
   width: 100%;
   font-style: italic;
@@ -128,43 +127,25 @@ hr {
   color: white;
 }
 
+.size-3 {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
 .social {
-  position: relative;
-  height: 180px;
-  width: 100%;
+  padding: 10px;
+}
+.social:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.social a {
   font-size: 50px;
   color: #b1b1b1;
 }
 
-.icon-right {
-  position: absolute;
-  display: inline-block;
-  height: 180px;
-  width: 33%;
-  left: 0;
-}
-
-.icon-mid {
-  position: absolute;
-  display: inline-block;
-  height: 180px;
-  width: 33%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.icon-left {
-  position: absolute;
-  display: inline-block;
-  height: 180px;
-  width: 33%;
-  right: 0;
-}
-
-.social i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.social i:hover {
+  color: #636363;
 }
